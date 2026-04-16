@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-inter);
+  --font-heading: var(--font-poppins);
+
+  --color-glass: rgba(15, 5, 25, 0.45);
+  --color-glass-border: rgba(0, 240, 255, 0.2);
+
+  --color-neon-cyan: #00f0ff;
+  --color-neon-pink: #ff5ebd;
+  --color-neon-purple: #7a00ff;
+}
+
+:root {
+  --background: #090212;
+  --foreground: #e0e0fd;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), sans-serif;
+  overscroll-behavior: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading), sans-serif;
+}
+
+/* Hide scrollbar for a cleaner cinematic look */
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.glass-panel {
+  background: var(--color-glass);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--color-glass-border);
+  border-radius: 1rem;
+  box-shadow: 0 8px 32px 0 rgba(0, 240, 255, 0.05);
+  transition: all 0.3s ease;
+}
+
+.glass-panel:hover {
+  border-color: rgba(255, 94, 189, 0.4);
+  box-shadow: 0 8px 32px 0 rgba(255, 94, 189, 0.1);
+}

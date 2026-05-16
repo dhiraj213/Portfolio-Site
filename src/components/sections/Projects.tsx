@@ -5,6 +5,14 @@ import ScrollReveal from "@/components/ui/ScrollReveal";
 export default function Projects() {
   const projects = [
     {
+      title: "Stellar VisionX",
+      desc: "A full-stack thermal-optical image super-resolution system that enhances low-resolution thermal images using optical guidance, with hotspot detection, automated email alerts, and cloud-based image storage.",
+      tech: ["React 18", "Node.js", "Express", "Python", "FastAPI", "MongoDB Atlas", "PyTorch", "OpenCV", "Cloudinary", "Nodemailer"],
+      role: "Full-Stack & AI Integration Developer",
+      github: "https://github.com/dhiraj213/Stellar-VisionX",
+      live: null
+    },
+    {
       title: "Carbon Emission Credit System",
       desc: "An ML-powered web application that predicts transportation-based carbon emissions and rewards users with carbon credits to encourage sustainable travel.",
       tech: ["Python", "Flask", "Node.js", "SQLite", "MongoDB", "Scikit-learn"],
